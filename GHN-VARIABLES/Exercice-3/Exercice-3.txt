@@ -1,0 +1,12 @@
+1er cas :
+
+firstLanguage vaut "JavaScript"
+secondLanguage vaut "JavaScript"
+thirdLanguage vaut "HTML"
+
+
+2eme cas: 
+
+firstLanguage vaut "JavaScript"
+secondLanguage vaut "JavaScript"
+thirdLanguage vaut "JavaScript"

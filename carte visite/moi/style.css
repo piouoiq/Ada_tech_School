@@ -1,0 +1,17 @@
+div{
+    background-color:#AFF0D0 ;
+    padding:50px;
+    border:thick double #CFAFF0;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+ul{
+    text-align: right;
+    list-style-type: none;
+}
+
+.mail{
+    text-decoration: underline;
+    text-align: center;
+}

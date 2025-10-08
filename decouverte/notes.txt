@@ -1,0 +1,3 @@
+Ceci est ma première note dans VS Code
+
+font size & font : roue manage (ctrl + , ) settings puis font size 

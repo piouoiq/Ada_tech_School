@@ -1,0 +1,16 @@
+div {
+    background-color : #740001 ;
+    padding: 50px;
+    border: thick double gold;
+    color: azure;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+ul{
+    text-align: right;
+    list-style-type: none;
+}
+
+.mail{
+    text-decoration: underline;
+}
