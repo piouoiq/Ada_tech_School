@@ -1,16 +1,20 @@
 function getHumanChoice(){
-let humanChoice = number(prompt("Choisissez un nombre entre 0 et 10.")
-return humanChoice
+    let humanChoice = (prompt("Choisissez un nombre entre 0 et 10."))
+    return humanChoice;
 }
-console.log(getHumanChoice())
 
-if (getHumanChoice()<=10){
+let humanChoice = getHumanChoice();
+console.log(humanChoice);
 
-    for (let i=getHumanChoice; i>0; i--){
-        console.log(i)
+if (humanChoice >= 0 && humanChoice <= 10){
+
+    for (let i = humanChoice; i >= 0; i--){
+        console.log(i);
     }
     
+    
+} else {
+    alert('ce n\'est pas une valeur disponible');
 }
-else{
-    getHumanChoice()
-}
+
+
