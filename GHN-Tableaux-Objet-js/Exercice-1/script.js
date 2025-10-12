@@ -8,12 +8,16 @@ const books = [
 ];
 
 //1
+
+function authorBooks(authorName){
  for (let book of books){
     
-   if (book.author.includes("Alice Martin")){
-        console.log(book)
-    }
+   if (book.author == authorName){
+       console.log(book.title)
+    } 
  }
+}
+authorBooks("Alice Martin")
 
 
 //  2
@@ -36,6 +40,29 @@ console.log(tottal / nb)
 averagePageGenre("art")
 averagePageGenre("programming")
  
+
+//2 correction Mathurin
+
+// function averagePageGenre(genre) {
+//  let genreStats = {};
+
+//     books.forEach(function(book) {
+//         if (!genreStats[book.genre]){
+//             genreStats[book.genre] = {totalPages:0, count:0};
+//         }
+
+//         genreStats[book.genre].totalPages += book.pages;
+//         genreStats[book.genre].count += 1; 
+//     }
+//     )
+
+//     let average = {};
+//     for (const genre in genreStats){
+//         average[genre] = Math.round(genreStats[genre].totalPages / genreStats[genre].count);
+//     }
+//     return average
+// }
+// console.log(averagePageGenre())
 
 //3
 let newest = 0
@@ -66,8 +93,35 @@ for (let i = 0; i < books.length; i++){
 console.log(listOfAuthor) //on ajoute .join(',') a listOfAuthor pour retourner en string plutôt qu'en 5 console log différents.
 
 //5 
+function genreList() {
+ let genreGroup = {};
 
-for (let i = 0; i < books.length; i++){
+
+    for(let book of books){
+        if (!genreGroup[book.genre]){
+            genreGroup[book.genre] = [];
+        } 
+        genreGroup[book.genre].push(book);
+    }
 
     
+    return genreGroup;
 }
+console.log(genreList())
+
+
+// 2eme méthode 
+// function genreList() {
+//  let genreGroup = {};
+
+//     books.forEach(function(book) {
+//         if (!genreGroup[book.genre]){
+//             genreGroup[book.genre] = [];
+//         } 
+//         genreGroup[book.genre].push(book);
+//     }
+//     );
+//         return genreGroup;
+// }
+// console.log(genreList());
+
