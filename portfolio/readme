@@ -1,0 +1,54 @@
+Objectif de l'Exercice
+Créer une page web complète qui présente de manière professionnelle tous les exercices réalisés durant votre formation. Cette page servira de vitrine pour vos compétences acquises et constituera un élément central de votre portfolio de développeur.
+
+🎯 Compétences Évaluées
+Structure HTML sémantique : Utilisation correcte des éléments HTML5
+Organisation du contenu : Présentation claire et logique des exercices
+Intégration multimédia : Gestion des images et captures d'écran
+Liens externes : Intégration avec GitHub et autres plateformes
+Votre page doit respecter la structure sémantique HTML5 suivante :
+
+Header : Navigation principale et titre du portfolio
+Main : Contenu principal avec sections organisées
+Footer : Informations de contact et liens sociaux
+ 
+Contenu Requis
+🏠 Section d'Accueil
+Titre principal
+Brève présentation personnelle (2-3 phrases)
+Photo ou avatar professionnel (optionnel mais recommandé)
+Call-to-action vers la section exercices
+💻 Section Exercices (OBLIGATOIRE)
+Pour chaque exercice réalisé, vous devez inclure :
+
+Titre de l'exercice : Nom explicite et descriptif
+Description courte : 2-3 lignes expliquant l'objectif
+Technologies utilisées : HTML, CSS, JavaScript, etc.
+Capture d'écran : Image représentative de l'exercice
+Lien GitHub : Lien direct vers le repository de l'exercice
+Lien démo : Si l'exercice est hébergé (GitHub Pages, Netlify, Vercel, etc.)
+Date de réalisation : Mois/année ou période
+📞 Footer (OBLIGATOIRE)
+Vos informations de contact (email, téléphone si souhaité)
+Liens vers vos profils professionnels (GitHub, LinkedIn)
+Copyright ou mention légale
+Eventuellement, liens vers CV ou autres portfolios pourront être ajouté plus tard dans la formation 
+Exemple de structures de fichiers 
+
+portfolio-exercices/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script_exercice_1.js
+
+│   └── script_exercice_2.js ETC... 
+
+├── images/
+│   ├── screenshots/
+│   │   ├── exercice1.png
+│   │   ├── exercice2.jpg
+│   │   └── ...
+│   ├── avatar.jpg
+│   └── favicon.ico
+└── README.md
