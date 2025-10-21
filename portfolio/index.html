@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Gruppo&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Mon portfolio</title>
+    <title>portfolio</title>
     <link rel="stylesheet" a href="style.css" />
     <script src="script.js"></script>
   </head>
@@ -18,11 +18,15 @@
       <h1>Melissa Largilliere</h1>
       <p>Student developer at Ada Tech School</p>
     </header>
-
     <main>
       <div class="section">
         <h1>About me:</h1>
-        <p class="callAction">See my projects</p>
+        <a
+          href="#callAction"
+          alt="link to the project section"
+          class="callAction"
+          >See my projects</a
+        >
       </div>
       <div class="aboutMe">
         <img
@@ -40,27 +44,168 @@
           did in the past.
         </p>
       </div>
-      <h2>My projects :</h2>
-      <a href="https://github.com/piouoiq/Ada_tech_School/tree/main/Exercices_individuels/01_bonjour_javascript.md" alt="link to exercice" target="_blank">Bonjour JavaScript</a>
-      <a href="https://github.com/piouoiq/Ada_tech_School/tree/main/Exercices_individuels/02_guess_a_number.md" alt="link to exercice" target="_blank">Guess a number</a> </a>
-    
+      <section id="callAction">
+        <h1>My projects :</h1>
+      </section>
+      <div class="exercices">
+        <div>
+          <div class="exerciceArrangement">
+            <div>
+              <img
+                class="preview"
+                src="images/bjrJS.jpg"
+                alt="Bonjour JavaScript exercice screenshot"
+              />
+            </div>
+            <div>
+              <a
+                class="extLink"
+                href="exercices/01_bonjour_javascript.md/index.html"
+                alt="link to exercice"
+                target="_blank"
+                >Bonjour JavaScript</a
+              >
+              <p>
+                This exercice consisted on showing either "Bonjour" or "Bonsoir"
+                depending on the time the user indicated. <br />
+                For this exercice I used some Html and JavaScript. <br />
+                Made in October 2025.
+              </p>
+              <a
+                class="extLink"
+                href="https://github.com/piouoiq/Ada_tech_School/tree/main/Exercices_individuels/01_bonjour_javascript.md"
+                alt="github link to the exercise"
+                target="_blank"
+                >See it on github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="exerciceArrangement">
+            <div>
+              <video
+                class="preview"
+                src="videos/Guess_a_number.mp4"
+                alt="video demonstration of the Guess a number exercice"
+              ></video>
+            </div>
+            <div>
+              <a
+                class="extLink"
+                href="exercices/02_guess_a_number.md/index.html"
+                alt="link to exercice"
+                target="_blank"
+                >Guess a number</a
+              >
+              <p>
+                This exercice consisted on having the user guess the number
+                chosen by the machine. Each try had to be followed by an
+                indication on whether the user's was lower, bigger or the same
+                as the machine's one. <br />
+                For this exercice I used some Html and JavaScript. <br />
+                Made in October 2025.
+              </p>
+              <a
+                class="extLink"
+                href="https://github.com/piouoiq/Ada_tech_School/tree/main/Exercices_individuels/02_guess_a_number.md"
+                alt="github link to the exercice"
+                target="_blank"
+                >See it on github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="exerciceArrangement">
+            <div>
+              <img
+                class="preview"
+                src="images/html_css_av_ex1.png"
+                alt="paws agency exercice screenshot"
+              />
+            </div>
+            <div>
+              <a
+                class="extLink"
+                href="exercices/Exercice-1/index.html"
+                alt="link to exercice"
+                target="_blank"
+                >paw's model agency</a
+              >
+              <p>
+                This exercice consisted on building the portfolio of the Paw's
+                model agency,<br />
+                building the grid for the pictures to be displayed in.<br />
+                For this exercice I used some Html and css. <br />
+                Made in October 2025.
+              </p>
+              <a
+                class="extLink"
+                href="https://github.com/piouoiq/Ada_tech_School/tree/main/%5BGHN%5D%20%5BC20%5D%20HTML-CSS-avanc%C3%A9/Exercice-1"
+                alt="github link to the exercice"
+                target="_blank"
+                >See it on github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="exerciceArrangement">
+            <div>
+              <img
+                class="preview"
+                src="images/html_css_av_ex3.png"
+                alt="Screenshot of the base apparel home screen exercice"
+              />
+            </div>
+            <div>
+              <a
+                class="extLink"
+                href="exercices/Exercice-3/index.html"
+                alt="link to exercice"
+                target="_blank"
+                >Base apparel home page</a
+              >
+              <p>
+                This exercice consisted on building a coming soon home page for
+                a clothing brand. I started building using the mobile first
+                method and plan to later adjust it to other screen formats.
+                <br />
+                For this exercice I used some advanced Html and css. <br />
+                Started in October 2025.
+              </p>
+              <a
+                class="extLink"
+                href="https://github.com/piouoiq/Ada_tech_School/tree/main/%5BGHN%5D%20%5BC20%5D%20HTML-CSS-avanc%C3%A9/Exercice-3"
+                alt="github link to the exercice"
+                target="_blank"
+                >See it on github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
       <h4>Contact me:</h4>
+
       <a
+        class="socials"
         href="https://www.linkedin.com/in/melissa-largilliere/"
         alt="linkedin profile link"
         target="_blank"
         >Linkedin</a
       >
       <a
+        class="socials"
         href="https://github.com/piouoiq"
         alt="lien profil GitHub"
         target="_blank"
         >GitHub</a
       >
-      <a href="" alt="CV link" target="_blank">Cv</a>
+      <a class="socials" href="" alt="CV link" target="_blank">Cv</a>
       <p>Email: melargilliere@gmail.com</p>
 
       <p>
