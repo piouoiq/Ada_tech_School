@@ -125,3 +125,23 @@ function decode(text) {
 console.log(decode("-.-. . -.-. .. / . ... - / ..- -. / - . ... -"));
 
 // étape 5
+//voir input dans index.html
+
+let morseConvert = document.getElementById("convertMorseButton");
+let textConvert = document.getElementById("TextConvertButton");
+let morseInput = document.getElementById("morseInput");
+let textInput = document.getElementById("textInput");
+let morseOutput = document.getElementById("morseOutput");
+let textOutput = document.getElementById("textOutput");
+
+morseConvert.addEventListener("click", () => {
+  const decoded = decode(morseInput.value);
+  textOutput.hidden = false;
+  textOutput.textContent = `The Morse code " ${morseInput.value} " is transcribed into " ${decoded} "`;
+});
+
+textConvert.addEventListener("click", () => {
+  const encoded = encode(textInput.value);
+  morseOutput.hidden = false;
+  morseOutput.textContent = `The text " ${textInput.value} " is transcribed into " ${encoded} "`;
+});
