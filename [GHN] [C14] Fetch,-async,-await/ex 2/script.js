@@ -1,6 +1,4 @@
 let isLoading = false;
-let loadingStatus = document.querySelector(".loadingStatus");
-let loadingStatus2 = document.querySelector(".loadingStatus2");
 let zone = document.querySelector(".text");
 let zone2 = document.querySelector(".text2");
 
