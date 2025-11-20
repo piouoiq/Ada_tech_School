@@ -1,0 +1,29 @@
+// Étape 1 : Lancer le voyage temporel
+// Écrire une fonction timeTravel, qui prend en paramètre currentYear et qui retourne "Travel to ${currentYear}"
+
+// Étape 2 : le tableau de bord de Doc
+// Écrire une fonction setDestination, qui prend en paramètre date, de type string ou number. Cette fonction doit TOUJOURS retourner un nombre (donc si c'est une string, la convertir en nombre en utilisant parseInt()-> indice slide 10 de la présentation)
+
+// Étape 3 : Le conducteur de la Dolorean
+// Écrire une interface Pilot, qui a 3 propriétés : name (chaine de caractères), age (nombre), era (nombre)
+
+// Étape 4 : Créer l'objet Marty
+
+// Étape 5 : Les coordonnées spacio temporelles
+// Écrire un type nommé TypeCoord, qui est un tableau de 3 nombres : le jour, le mois et l'année
+
+// Étape 6 : Rentrer les coordonnées de l'année 1955
+// Écrire coords1955, qui correspond au 5 novembre 1955
+
+// Étape 7 : Lancement de la Dolorean
+// Écrire une fonction launchSequence, qui prends en paramètres le pilote et les coordonnées temporelles, et qui retourne "${nomDuPilote} décolle ! Utiliser aussi timeTravel(year) pour indiquer l'année de destination"
+
+// Appeller la fonction pour vérifier que tout marche bien
+
+//Étape 8 : On a oublié le plutonium !
+// Ajouter une propriété optionnelle à Pilot : plutoniumLevel (nombre)
+
+// Étape 9 : Ajouter du plutonium à Marty pour qu'il puisse décoller
+
+// Étape 10 : Changer LaunchSequence
+// Gérer le cas ou le pilote n'a pas de plutonium, il devra rester dans son année. On part également du principe que si plutonium n'est pas indiqué, alors il équivaut à 0.

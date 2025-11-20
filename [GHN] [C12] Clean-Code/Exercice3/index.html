@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .photo {
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 200px;
+        text-align: center;
+      }
+      .photo img {
+        width: 100%;
+        height: auto;
+      }
+      .photo-title {
+        padding: 10px;
+        background-color: #f8f8f8;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Photo Gallery</h1>
+    <div class="gallery" id="gallery"></div>
+    <script>
+      async function fetchPhotos() {
+        const url = "https://jsonplaceholder.typicode.com/photos";
+        try {
+          const response = await fetch(url);
+
+          if (!response.ok) {
+            throw new Error(`Erreur API : ${response.status}`);
+          }
+
+          return await response.json();
+        } catch (error) {
+          console.error("Erreur lors de la récupération des photos :", error);
+          return null;
+        }
+      }
+
+      function createPhotoElement(photo) {
+        const photoDiv = document.createElement("div");
+        photoDiv.className = "photo";
+
+        const img = document.createElement("img");
+        img.src = photo.thumbnailUrl;
+        img.alt = photo.title;
+
+        const title = document.createElement("div");
+        title.className = "photo-title";
+        title.textContent = photo.title;
+
+        photoDiv.appendChild(img);
+        photoDiv.appendChild(title);
+
+        return photoDiv;
+      }
+
+      function renderGallery(photos) {
+        const gallery = document.getElementById("gallery");
+        gallery.innerHTML = ""; // reset
+
+        if (!photos) {
+          gallery.innerHTML =
+            "<p style='color:red;'>Impossible de charger les photos. Veuillez réessayer plus tard.</p>";
+          return;
+        }
+
+        photos.slice(0, 50).forEach((photo) => {
+          const element = createPhotoElement(photo);
+          gallery.appendChild(element);
+        });
+      }
+
+      async function gallery() {
+        const photos = await fetchPhotos();
+        renderGallery(photos);
+      }
+
+      window.onload = gallery;
+    </script>
+  </body>
+</html>
