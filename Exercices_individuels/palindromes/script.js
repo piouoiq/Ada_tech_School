@@ -83,7 +83,7 @@ console.log(isPalindrome("boat"));
 // |_____________________________________________________
 
 function getNextPalindromes(count) {
-  const palindromes = [];
+  let palindromes = [];
   let date = new Date(); //Date() est une fonction intégrée à JS qui renvoie la date et l'heure actuelle.
 
   while (palindromes.length < count) {
